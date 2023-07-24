@@ -1,0 +1,346 @@
+/*  BODY & HTML CSS */
+
+/* -------------- */
+
+body {
+  /* Positioning */
+  margin-bottom: 150px;
+
+  /* Typography */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+  /* Visual */
+  background-image: url("./images/concrete_seamless.png");
+  scroll-behavior: smooth;
+}
+
+html {
+  /* Positioning */
+  position: relative;
+
+  /* Box-model */
+  min-height: 100%;
+}
+/* ----------------- */
+
+/* NAV START CSS */
+
+/* ------------- */
+nav,
+nav div.collapse {
+  /* box-model */
+  height: 80px !important;
+  /* visual */
+  border-bottom: solid 1px #ccc;
+}
+
+nav ul li {
+  /* Typography */
+  font-size: 16px !important;
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+nav ul {
+  /* Box-model */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+nav ul li:nth-child(n + 2)::before {
+  content: "";
+  border-left: 0.0625rem solid #bbbbcc;
+  height: 12px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding-right: 1vw;
+}
+
+.logo {
+  /* Box-model */
+  padding: 32px 16px !important;
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  /* Typography */
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Georgia", Times, Times New Roman, serif !important;
+
+  /* visual */
+  color: white;
+  background-color: #4aaaa5;
+}
+
+.logo :hover {
+  background-color: #ffffff !important;
+}
+
+/* ----------------- */
+
+/* GENERAL SECTION CSS */
+
+/* ------------------ */
+
+.bio-section-main {
+  /* display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important; */
+  row-gap: 20px !important;
+}
+
+/* ------------- */
+
+/* BIO ARTICLE CSS */
+
+/* ------------- */
+
+.bio-section h1 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #4aaaa5;
+}
+
+.bio-section p {
+  /* visual */
+  color: #bbc !important;
+
+  /* topography */
+  text-align: justify !important;
+  font-size: 14px !important;
+}
+
+/* ----------------- */
+
+/* FIGURE CSS */
+/* ----------------- */
+figure .card-body {
+  /* box-model */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0 !important;
+  width: 100%;
+  height: 60px !important;
+
+  /* position */
+  position: absolute;
+  bottom: 30px;
+
+  /* visual */
+  background-color: #4aaaa5;
+  color: #b5fffa !important;
+}
+
+figure .images img:hover {
+  /* visual */
+  opacity: 0.8;
+}
+
+.item-fade {
+  /* visual */
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+
+figure .card-body h5,
+figure .card-body p {
+  text-align: center !important;
+}
+
+figure .card-body p {
+  /* visual */
+  color: #b5fffa !important;
+
+  /* typography */
+  font-weight: lighter;
+  font-size: 12px !important;
+}
+
+/* ----------------- */
+
+/* ASIDE CSS */
+
+/* ------------ */
+.bio-section aside {
+  /* box-model */
+  height: 150px;
+}
+
+.bio-section aside h2 {
+  /* Typography */
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: bold !important;
+
+  /* visiual */
+  color: #4aaaa5;
+}
+
+.bio-section aside #images img {
+  width: 32px;
+  height: 32px;
+}
+
+#images {
+  gap: 5px;
+}
+
+/* -------------- */
+
+/* FOOTER CSS */
+
+/* ------------- */
+
+footer {
+  /* box-model */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw !important;
+  height: 10vh !important;
+
+  /* position */
+  position: absolute;
+  bottom: 0;
+
+  /* Visual */
+  color: #fff;
+  background-color: #666;
+  border-top: 10px solid #4aaaa5 !important;
+}
+
+footer .text {
+  /* Visual */
+  color: #fff !important;
+
+  /* Typography */
+  font-size: 14px !important;
+}
+
+footer {
+  border-top: solid 1 px #4aaaa5 !important;
+}
+
+/* ----------------- */
+
+/* COMMON CSS FOR DIFFERENT ELEMENTS */
+
+/* ---------------- */
+
+.bio-section article,
+.bio-section aside,
+.bio-section figure,
+nav.navbar,
+nav.navbar .navbar-collapse {
+  /* visual */
+  background-color: #fff !important;
+}
+/* -------------- */
+
+/* MEDIA QUESRIES */
+
+/* ------------- */
+
+@media only screen and (max-width: 767px) {
+  nav.navbar,
+  nav.navbar {
+    background-color: #4aaaa5 !important;
+  }
+
+  nav {
+    height: 100px !important;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid #ccc;
+  }
+
+  nav:first-child {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    padding: 0 !important;
+    height: 30px !important;
+  }
+
+  .div-for-logo-etc {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  nav .navbar-toggler {
+    background-color: #4aaaa5;
+    border: 1px solid #ccc;
+  }
+
+  nav .navbar-toggler-icon {
+    color: #888 !important;
+  }
+
+  nav div.navbar-collapse {
+    position: absolute;
+    left: 0;
+    bottom: -70px;
+    width: 100vw !important;
+  }
+
+  nav div.navbar-collapse ul {
+    margin: 0 !important;
+    width: 100%;
+    height: 80px;
+    padding-left: 5px;
+    display: inline-flex !important;
+    justify-content: space-around !important;
+    align-items: flex-start !important;
+  }
+
+  nav div.navbar-collapse ul li a,
+  div.navbar-collapse ul li {
+    padding: 0 !important;
+  }
+
+  nav div.navbar-collapse ul li a:hover {
+    color: #4aaaa5 !important;
+    text-decoration: underline;
+  }
+
+  nav div.navbar-collapse ul li:first-child {
+    position: relative;
+    right: -1.4vw;
+  }
+
+  nav ul li:nth-child(n + 2)::before {
+    border-left: solid #fff 1px !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  main {
+    width: 90% !important;
+    margin: auto !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+  }
+}

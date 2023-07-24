@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Basic web bootstrao pages</title>
+    <!-- Bootstrap css CDN  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap js script CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <!-- Start of navbar -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light p-0 px-4">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <a class="navbar-brand fw-bold display-1 logo" href="">Gachay Aliyev</a>
+      <div class="container-fluid div-for-logo-etc">
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collect the nav links and other content for toggling -->
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html" aria-current="page"
+                >About <span class="visually-hidden">(current)</span></a
+              >
+            </li>
+            <li class="nav-item p-4">
+              <a class="nav-link" href="./porfolio.html" aria-current="page"
+                >Portfolio <span class="visually-hidden">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html" aria-current="page"
+                >Contact <span class="visually-hidden">(current)</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- Main container starts here  -->
+    <main class="pt-5">
+      <section class="bio-section container">
+        <div class="row bio-section-main">
+          <!-- Bio article starts here -->
+          <article class="col-md-6 col-12 clearfix">
+            <div
+              class="row bio-container-main p-3 d-flex justify-content-between align-content-around"
+            >
+              <h1 class="border-bottom p-0 pb-4">About me</h1>
+              <div class="clearfix ps-0">
+                <img
+                  class="col-lg-3 col-md-12 col-sm-6 col-12 float-start bio-photo me-3 mb-1"
+                  src="./assets/images/IMG_0033.jpg"
+                  alt=""
+                />
+                <p class="bio-p fs-3">
+                  Hello, my full name is Gachay Aliyev. I am 32 years old. I am
+                  from Azerbaijan and lived in The United States. I have
+                  successfully completed a Bachelor's degree in Turkiye and a
+                  Master's degree in the USA. I’m a web developer with in-depth
+                  experience in UI/UX design and a couple of years hands on
+                  development, design and coding in server side and client side.
+                </p>
+                <p class="bio-p fs-3 text-center">
+                  In a nutshell, I create websites that help organizations
+                  address business challenges and meet their needs. I manage
+                  everything from website navigation and layout to a company’s
+                  web hosting and security architecture. My expertise lies
+                  within front-end and back-end web applications.I’m a lifelong
+                  learner (currently taking a course on new technologies to
+                  catch up) and love to read, discover new places, shooting,
+                  hunting and spending time with my friends and family.
+                </p>
+              </div>
+            </div>
+          </article>
+          <!-- End of the Article -->
+
+          <!-- ---------------------------- -->
+
+          <!-- Start of Connect With Me Area -->
+          <aside
+            class="col-lg-3 col-md-4 col-12 offset-md-2 d-flex justify-content-between align-content-around"
+          >
+            <div class="row p-3 w-100">
+              <h2 class="border-bottom p-0">Contact With Me</h2>
+              <div
+                id="images"
+                class="p-0 d-flex align-items-center justify-content-center"
+              >
+                <a href="https://github.com/codewithgachay">
+                  <img src="./assets/images/linkedin-128.png" alt=""
+                /></a>
+                <a href="https://github.com/codewithgachay">
+                  <img src="./assets/images/github-128.png" alt=""
+                /></a>
+                <a
+                  href="https://stackoverflow.com/users/22218299/gachay-aliyev"
+                >
+                  <img src="./assets/images/stackoverflow-128.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </aside>
+          <!-- End of the Connect With Me Area -->
+        </div>
+      </section>
+    </main>
+    <!-- End of the Main container -->
+
+    <!-- ------------------- -->
+
+    <!-- Start of footer -->
+    <footer class="footer">
+      <p class="text">&copy; Copyright 2023 Gachay Aliyev</p>
+    </footer>
+    <!-- End of footer -->
+  </body>
+</html>

@@ -190,6 +190,7 @@ figure .card-body p {
 }
 
 .bio-section aside #images img {
+  /* box-model */
   width: 32px;
   height: 32px;
 }
@@ -222,7 +223,10 @@ footer {
   border-top: 10px solid #4aaaa5 !important;
 }
 
-footer .text {
+footer p.text {
+  /* box-model */
+  margin: 0 !important;
+
   /* Visual */
   color: #fff !important;
 
@@ -231,6 +235,7 @@ footer .text {
 }
 
 footer {
+  /* visual */
   border-top: solid 1 px #4aaaa5 !important;
 }
 
@@ -257,59 +262,76 @@ nav.navbar .navbar-collapse {
 @media only screen and (max-width: 767px) {
   nav.navbar,
   nav.navbar {
+    /* visual */
     background-color: #4aaaa5 !important;
   }
 
   nav {
+    /* box-model */
     height: 100px !important;
   }
 
   .navbar-toggler {
+    /* position */
     position: absolute;
     top: 10px;
     right: 10px;
+
+    /* visual */
     border: 1px solid #ccc;
   }
 
   nav:first-child {
+    /* position */
     display: flex;
     justify-content: center;
   }
 
   .logo {
+    /* position */
     position: absolute;
     bottom: 10px;
     text-align: center;
+
+    /* box-model */
     padding: 0 !important;
     height: 30px !important;
   }
 
   .div-for-logo-etc {
+    /* position */
     display: flex !important;
     justify-content: center !important;
   }
 
   nav .navbar-toggler {
+    /* visual */
     background-color: #4aaaa5;
     border: 1px solid #ccc;
   }
 
   nav .navbar-toggler-icon {
+    /* visual */
     color: #888 !important;
   }
 
   nav div.navbar-collapse {
+    /* box-model */
+    width: 100vw !important;
+
+    /* position */
     position: absolute;
     left: 0;
     bottom: -70px;
-    width: 100vw !important;
   }
 
   nav div.navbar-collapse ul {
+    /* box-model */
     margin: 0 !important;
     width: 100%;
     height: 80px;
     padding-left: 5px;
+    /* position */
     display: inline-flex !important;
     justify-content: space-around !important;
     align-items: flex-start !important;
@@ -317,28 +339,34 @@ nav.navbar .navbar-collapse {
 
   nav div.navbar-collapse ul li a,
   div.navbar-collapse ul li {
+    /* box-model */
     padding: 0 !important;
   }
 
   nav div.navbar-collapse ul li a:hover {
+    /* visual */
     color: #4aaaa5 !important;
     text-decoration: underline;
   }
 
   nav div.navbar-collapse ul li:first-child {
+    /* position */
     position: relative;
     right: -1.4vw;
   }
 
   nav ul li:nth-child(n + 2)::before {
+    /* visual */
     border-left: solid #fff 1px !important;
   }
 }
 
 @media only screen and (max-width: 640px) {
   main {
+    /* box-model */
     width: 90% !important;
     margin: auto !important;
+    /* position */
     display: flex !important;
     justify-content: flex-start !important;
     align-items: center !important;

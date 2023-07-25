@@ -187,6 +187,9 @@ figure .card-body p {
 
   /* visiual */
   color: #4aaaa5;
+
+  /* position */
+  text-align: center;
 }
 
 .bio-section aside #images img {
